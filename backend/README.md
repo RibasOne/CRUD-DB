@@ -75,36 +75,36 @@ CREATE TABLE Consultas (
 
 # Ordem de Criação dos Registros
 
-Para criar um paciente, você deve primeiro criar um endereço. Aqui estão os passos detalhados:
+- Para criar um paciente, você deve primeiro criar um endereço. Aqui estão os passos detalhados:
 
 1. Crie um Endereço:
 
-Abra requests/endereco.http.
-Envie a requisição de criação (Create Endereço).
-Copie o id gerado na resposta.
+- Abra requests/endereco.http.
+- Envie a requisição de criação (Create Endereço).
+- Copie o id gerado na resposta.
 
 2. Crie um Paciente:
 
-Abra requests/paciente.http.
-Substitua o valor de id_endereco pelo id do endereço copiado na etapa anterior.
-Envie a requisição de criação (Create Paciente).
-Copie o id gerado na resposta.
+- Abra requests/paciente.http.
+- Substitua o valor de id_endereco pelo id do endereço copiado na etapa anterior.
+- Envie a requisição de criação (Create Paciente).
+- Copie o id gerado na resposta.
 
 3. Crie um Telefone:
 
-Abra requests/telefone.http.
-Substitua o valor de id_paciente pelo id do paciente copiado na etapa anterior.
-Envie a requisição de criação (Create Telefone).
+- Abra requests/telefone.http.
+- Substitua o valor de id_paciente pelo id do paciente copiado na etapa anterior.
+- Envie a requisição de criação (Create Telefone).
 
 4. Crie um Médico:
 
-Abra requests/medico.http.
-Envie a requisição de criação (Create Medico).
-Copie o id gerado na resposta.
+- Abra requests/medico.http.
+- Envie a requisição de criação (Create Medico).
+- Copie o id gerado na resposta.
 
 5. Crie uma Consulta:
 
-Abra requests/consultas.http.
-Substitua o valor de id_paciente pelo id do paciente copiado na etapa anterior.
-Substitua o valor de id_medico pelo id do médico copiado na etapa anterior.
-Envie a requisição de criação (Create Consulta).
+- Abra requests/consultas.http.
+- Substitua o valor de id_paciente pelo id do paciente copiado na etapa anterior.
+- Substitua o valor de id_medico pelo id do médico copiado na etapa anterior.
+- Envie a requisição de criação (Create Consulta).
