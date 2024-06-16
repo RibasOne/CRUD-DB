@@ -43,32 +43,68 @@ CREATE TABLE Telefone (
     FOREIGN KEY (id_paciente) REFERENCES Paciente(id)
 );
 
+CREATE TABLE Historico (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    data_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Medico (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    horas INT NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    especialidade VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Consultas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_paciente INT,
+    id_medico INT,
+    horas INT NOT NULL,
+    data DATE NOT NULL,
+    FOREIGN KEY (id_paciente) REFERENCES Paciente(id),
+    FOREIGN KEY (id_medico) REFERENCES Medico(id)
+);
+
 3. Inicie o servidor:
 
 - node server.js
 
-4. Testando a API com a Extensão REST Client do VSCode
+- Navegue até a pasta requests e abra um dos arquivos .http (por exemplo, endereco.http).
+- Envie as requisições clicando em "Send Request" acima de cada requisição.
 
-Navegue até a pasta requests e abra um dos arquivos .http (por exemplo, endereco.http).
-Envie as requisições clicando em "Send Request" acima de cada requisição.
+# Ordem de Criação dos Registros
 
-5. Ordem de Criação dos Registros
+Para criar um paciente, você deve primeiro criar um endereço. Aqui estão os passos detalhados:
 
-- Crie um Endereço:
+1. Crie um Endereço:
 
 Abra requests/endereco.http.
 Envie a requisição de criação (Create Endereço).
 Copie o id gerado na resposta.
 
-- Crie um Paciente:
+2. Crie um Paciente:
 
 Abra requests/paciente.http.
 Substitua o valor de id_endereco pelo id do endereço copiado na etapa anterior.
 Envie a requisição de criação (Create Paciente).
 Copie o id gerado na resposta.
 
-- Crie um Telefone:
+3. Crie um Telefone:
 
 Abra requests/telefone.http.
 Substitua o valor de id_paciente pelo id do paciente copiado na etapa anterior.
 Envie a requisição de criação (Create Telefone).
+
+4. Crie um Médico:
+
+Abra requests/medico.http.
+Envie a requisição de criação (Create Medico).
+Copie o id gerado na resposta.
+
+5. Crie uma Consulta:
+
+Abra requests/consultas.http.
+Substitua o valor de id_paciente pelo id do paciente copiado na etapa anterior.
+Substitua o valor de id_medico pelo id do médico copiado na etapa anterior.
+Envie a requisição de criação (Create Consulta).
