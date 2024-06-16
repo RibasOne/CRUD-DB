@@ -1,0 +1,33 @@
+# Create Consulta
+POST http://localhost:3000/consultas
+Content-Type: application/json
+
+{
+    "id_paciente": 1,
+    "id_medico": 1,
+    "horas": 2,
+    "data": "2024-06-14"
+}
+
+###
+
+# Read Consulta
+GET http://localhost:3000/consultas/1
+
+###
+
+# Update Consulta
+PUT http://localhost:3000/consultas/1
+Content-Type: application/json
+
+{
+    "id_paciente": 1,
+    "id_medico": 1,
+    "horas": 4,
+    "data": "2024-06-16"
+}
+
+###
+
+# Delete Consulta
+DELETE http://localhost:3000/consultas/1

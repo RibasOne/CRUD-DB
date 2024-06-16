@@ -1,4 +1,4 @@
-import pool from '../databaseb.js';
+import pool from '../database.js';
 
 export const createMedico = async (req, res) => {
     const { horas, nome, especialidade } = req.body;

@@ -1,0 +1,31 @@
+# Create Medico
+POST http://localhost:3000/medicos
+Content-Type: application/json
+
+{
+    "horas": 8,
+    "nome": "Dr. Fulano",
+    "especialidade": "Cardiologia"
+}
+
+###
+
+# Read Medico
+GET http://localhost:3000/medicos/1
+
+###
+
+# Update Medico
+PUT http://localhost:3000/medicos/1
+Content-Type: application/json
+
+{
+    "horas": 10,
+    "nome": "Dr. Fulano Silva",
+    "especialidade": "Neurologia"
+}
+
+###
+
+# Delete Medico
+DELETE http://localhost:3000/medicos/1

@@ -1,0 +1,17 @@
+# Create Historico
+POST http://localhost:3000/historicos
+
+###
+
+# Read Historico
+GET http://localhost:3000/historicos/1
+
+###
+
+# Update Historico
+PUT http://localhost:3000/historicos/1
+
+###
+
+# Delete Historico
+DELETE http://localhost:3000/historicos/1
