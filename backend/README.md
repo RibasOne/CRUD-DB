@@ -73,7 +73,7 @@ CREATE TABLE Consultas (
 - Navegue até a pasta requests e abra um dos arquivos .http (por exemplo, endereco.http).
 - Envie as requisições clicando em "Send Request" acima de cada requisição.
 
-# Ordem de Criação dos Registros
+## Ordem de Criação dos Registros
 
 - Para criar um paciente, você deve primeiro criar um endereço. Aqui estão os passos detalhados:
 
