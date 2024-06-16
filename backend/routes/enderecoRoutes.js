@@ -3,6 +3,7 @@ import { createEndereco, readEndereco, updateEndereco, deleteEndereco } from '..
 
 const router = express.Router();
 
+// CRUD routes for Endereco
 router.post('/', createEndereco);
 router.get('/:id', readEndereco);
 router.put('/:id', updateEndereco);

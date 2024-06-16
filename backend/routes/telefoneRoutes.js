@@ -3,6 +3,7 @@ import { createTelefone, readTelefone, updateTelefone, deleteTelefone } from '..
 
 const router = express.Router();
 
+// CRUD routes for Telefone
 router.post('/', createTelefone);
 router.get('/:id', readTelefone);
 router.put('/:id', updateTelefone);

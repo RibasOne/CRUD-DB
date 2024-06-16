@@ -6,9 +6,9 @@ import telefoneRoutes from './routes/telefoneRoutes.js';
 const app = express();
 app.use(express.json());
 
-app.use('/paciente', pacienteRoutes);
-app.use('/endereco', enderecoRoutes);
-app.use('/telefone', telefoneRoutes);
+app.use('/pacientes', pacienteRoutes);
+app.use('/enderecos', enderecoRoutes);
+app.use('/telefones', telefoneRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

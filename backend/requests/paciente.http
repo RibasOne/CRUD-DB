@@ -1,0 +1,33 @@
+# Create Paciente
+POST http://localhost:3000/pacientes
+Content-Type: application/json
+
+{
+    "nome": "Fulano da Silva",
+    "id_endereco": 1,
+    "email": "fulano@edu.univali.br",
+    "historico": "Historico"
+}
+
+###
+
+# Read Paciente
+GET http://localhost:3000/pacientes/1
+
+###
+
+# Update Paciente
+PUT http://localhost:3000/pacientes/1
+Content-Type: application/json
+
+{
+    "nome": "Fulano da Silva Atualizado",
+    "id_endereco": 1,
+    "email": "fulano@edu.univali.br",
+    "historico": "Historico atualizado"
+}
+
+###
+
+# Delete Paciente
+DELETE http://localhost:3000/pacientes/1

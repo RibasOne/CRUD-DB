@@ -1,0 +1,31 @@
+# Create Telefone
+POST http://localhost:3000/telefones
+Content-Type: application/json
+
+{
+    "id_paciente": 1,
+    "numero": "123456789",
+    "tipo": "Celular"
+}
+
+###
+
+# Read Telefone
+GET http://localhost:3000/telefones/1
+
+###
+
+# Update Telefone
+PUT http://localhost:3000/telefones/1
+Content-Type: application/json
+
+{
+    "id_paciente": 1,
+    "numero": "987654321",
+    "tipo": "Residencial"
+}
+
+###
+
+# Delete Telefone
+DELETE http://localhost:3000/telefones/1

@@ -1,0 +1,33 @@
+# Create Endereço
+POST http://localhost:3000/enderecos
+Content-Type: application/json
+
+{
+    "cidade": "Balneario Camboriu",
+    "bairro": "Centro",
+    "rua": "Avenida Brasil",
+    "numero": 1000
+}
+
+###
+
+# Read Endereço
+GET http://localhost:3000/enderecos/1
+
+###
+
+# Update Endereço
+PUT http://localhost:3000/enderecos/1
+Content-Type: application/json
+
+{
+    "cidade": "Balneario Camboriu Atualizado",
+    "bairro": "Centro Atualizado",
+    "rua": "Avenida Brasil Atualizada",
+    "numero": 2000
+}
+
+###
+
+# Delete Endereço
+DELETE http://localhost:3000/enderecos/1
