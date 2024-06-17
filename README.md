@@ -1,6 +1,6 @@
 # Sistema de Gestão de Pacientes
 
-Este projeto implementa um backend para um sistema de gestão de pacientes usando Node.js, Express e MySQL. O objetivo é fornecer operações CRUD para as entidades `Paciente`, `Endereço` e `Telefone`.
+Este projeto implementa um backend para um sistema de gestão de pacientes usando Node.js, Express e MySQL. O objetivo é fornecer operações CRUD para as principais entidades do projeto.
 
 ## Pré-requisitos
 
