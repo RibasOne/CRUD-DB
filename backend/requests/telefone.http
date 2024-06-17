@@ -3,7 +3,7 @@ POST http://localhost:3000/telefones
 Content-Type: application/json
 
 {
-    "id_paciente": 1,
+    "id_paciente": 2,
     "numero": "123456789",
     "tipo": "Celular"
 }
@@ -22,7 +22,7 @@ Content-Type: application/json
 {
     "id_paciente": 1,
     "numero": "987654321",
-    "tipo": "Residencial"
+    "tipo": "Residencial" // Celular, Residencial, Comercial
 }
 
 ###

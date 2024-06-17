@@ -30,4 +30,4 @@ Content-Type: application/json
 ###
 
 # Delete Consulta
-DELETE http://localhost:3000/consultas/1
+DELETE http://localhost:3000/consultas/0

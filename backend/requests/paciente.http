@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "nome": "Fulano da Silva",
-    "id_endereco": 1,
+    "id_endereco": 3,
     "email": "fulano@edu.univali.br",
     "historico": "Historico"
 }
